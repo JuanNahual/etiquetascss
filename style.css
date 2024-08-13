@@ -6,20 +6,17 @@
 }
 
 .producto-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px; /* Espacio entre los productos */
 }
 
 .producto {
-    width: calc(50% - 20px); /* Ajusta el ancho de los productos para dos columnas */
     box-sizing: border-box;
     padding: 15px;
     border: 2px solid #ccc;
     border-radius: 8px;
-    background-color: #f9f9f9;
-    margin-bottom: 20px;
+    background-color: white;
     font-family: Arial, sans-serif;
 }
 
@@ -41,16 +38,12 @@
 
 @media print {
     .producto-list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas para la impresión también */
     }
 
     .producto {
-        width: 100%;
         border: 2px solid #ccc;
         background-color: #f9f9f9;
         padding: 15px;
-        margin: 0;
     }
 }
