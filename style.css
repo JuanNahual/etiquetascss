@@ -36,7 +36,7 @@
 }
 
 .precio {
-    font-size: 70px; /* Tamaño de fuente para el precio */
+    font-size: 80px; /* Tamaño de fuente para el precio */
     font-weight: bold;
     color: #000; /* Color negro para el precio */
 }
@@ -48,7 +48,7 @@
 
     .producto {
         border: 2px solid #ccc;
-        background-color: #f9f9f9;
+        background-color: black;
         padding: 15px;
     }
 }
