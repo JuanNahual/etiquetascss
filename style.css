@@ -1,0 +1,50 @@
+/* Estilos generales para el catálogo */
+.catalogo-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.producto-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.producto {
+    width: calc(50% - 10px); /* Ajusta el ancho de los productos para dos columnas */
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.producto span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.descripcion {
+    font-weight: bold;
+}
+
+.precio {
+    color: #e20011; /* Ajusta el color del precio si lo deseas */
+}
+
+@media print {
+    .producto-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .producto {
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    }
+}
