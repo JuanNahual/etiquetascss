@@ -13,12 +13,14 @@
 }
 
 .producto {
-    width: calc(50% - 10px); /* Ajusta el ancho de los productos para dos columnas */
+    width: calc(50% - 20px); /* Ajusta el ancho de los productos para dos columnas */
     box-sizing: border-box;
-    padding: 10px;
-    border: 1px solid #ccc;
+    padding: 15px;
+    border: 2px solid #ccc;
     border-radius: 8px;
     background-color: #f9f9f9;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
 }
 
 .producto span {
@@ -28,23 +30,27 @@
 
 .descripcion {
     font-weight: bold;
+    font-size: 16px; /* Tamaño de fuente para la descripción */
 }
 
 .precio {
-    color: #e20011; /* Ajusta el color del precio si lo deseas */
+    font-size: 20px; /* Tamaño de fuente para el precio */
+    font-weight: bold;
+    color: #000; /* Color negro para el precio */
 }
 
 @media print {
     .producto-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        gap: 20px;
     }
 
     .producto {
         width: 100%;
-        border: none;
-        background-color: transparent;
-        padding: 0;
+        border: 2px solid #ccc;
+        background-color: #f9f9f9;
+        padding: 15px;
+        margin: 0;
     }
 }
