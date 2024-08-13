@@ -16,10 +16,13 @@
     padding: 15px;
     border: 2px solid #ccc;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: white;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
+    align-items: center; /* Centra los elementos en el eje horizontal */
+    justify-content: center; /* Centra los elementos en el eje vertical */
+    text-align: center; /* Centra el texto dentro del recuadro */
 }
 
 .producto span {
@@ -29,11 +32,11 @@
 
 .descripcion {
     font-weight: bold;
-    font-size: 16px; /* Tamaño de fuente para la descripción */
+    font-size: 20px; /* Tamaño de fuente para la descripción */
 }
 
 .precio {
-    font-size: 20px; /* Tamaño de fuente para el precio */
+    font-size: 50px; /* Tamaño de fuente para el precio */
     font-weight: bold;
     color: #000; /* Color negro para el precio */
 }
