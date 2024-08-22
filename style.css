@@ -23,6 +23,7 @@
     align-items: center; /* Centra los elementos en el eje horizontal */
     justify-content: center; /* Centra los elementos en el eje vertical */
     text-align: center; /* Centra el texto dentro del recuadro */
+    page-break-inside: avoid; /* Evita que el producto se divida entre páginas */
 }
 
 .producto span {
@@ -48,7 +49,6 @@
 
     .producto {
         border: 2px solid #ccc;
-        
         padding: 15px;
     }
 }
