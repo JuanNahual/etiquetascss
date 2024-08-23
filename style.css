@@ -37,7 +37,7 @@
 }
 
 .precio {
-    font-size: 80px; /* Tamaño de fuente para el precio */
+    font-size: 100px; /* Tamaño de fuente para el precio */
     font-weight: bold;
     color: #000; /* Color negro para el precio */
 }
